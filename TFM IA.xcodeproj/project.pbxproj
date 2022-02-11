@@ -13,6 +13,13 @@
 		2D5CD3A627B5F1DB00A8282C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5CD3A427B5F1DB00A8282C /* Main.storyboard */; };
 		2D5CD3A827B5F1DE00A8282C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D5CD3A727B5F1DE00A8282C /* Assets.xcassets */; };
 		2D5CD3AB27B5F1DE00A8282C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5CD3A927B5F1DE00A8282C /* LaunchScreen.storyboard */; };
+		2D5CD3B427B5F3B500A8282C /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5CD3B327B5F3B500A8282C /* BoundingBox.swift */; };
+		2D5CD3B627B5F3D900A8282C /* CVPixelBuffer+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5CD3B527B5F3D900A8282C /* CVPixelBuffer+Helpers.swift */; };
+		2D5CD3B827B5F40000A8282C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5CD3B727B5F40000A8282C /* Helpers.swift */; };
+		2D5CD3BA27B5F42F00A8282C /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5CD3B927B5F42F00A8282C /* UIImage+CVPixelBuffer.swift */; };
+		2D5CD3BC27B5F45200A8282C /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5CD3BB27B5F45200A8282C /* VideoCapture.swift */; };
+		2D5CD3BE27B5F47600A8282C /* YOLO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5CD3BD27B5F47600A8282C /* YOLO.swift */; };
+		2D5CD3C027B5F4A900A8282C /* TinyYOLO.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2D5CD3BF27B5F4A900A8282C /* TinyYOLO.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		2D5CD3A727B5F1DE00A8282C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D5CD3AA27B5F1DE00A8282C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D5CD3AC27B5F1DE00A8282C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D5CD3B327B5F3B500A8282C /* BoundingBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBox.swift; sourceTree = "<group>"; };
+		2D5CD3B527B5F3D900A8282C /* CVPixelBuffer+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Helpers.swift"; sourceTree = "<group>"; };
+		2D5CD3B727B5F40000A8282C /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		2D5CD3B927B5F42F00A8282C /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		2D5CD3BB27B5F45200A8282C /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		2D5CD3BD27B5F47600A8282C /* YOLO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOLO.swift; sourceTree = "<group>"; };
+		2D5CD3BF27B5F4A900A8282C /* TinyYOLO.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TinyYOLO.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 		2D5CD39D27B5F1DB00A8282C /* TFM IA */ = {
 			isa = PBXGroup;
 			children = (
+				2D5CD3B227B5F39C00A8282C /* YOLO */,
 				2D5CD39E27B5F1DB00A8282C /* AppDelegate.swift */,
 				2D5CD3A027B5F1DB00A8282C /* SceneDelegate.swift */,
 				2D5CD3A227B5F1DB00A8282C /* ViewController.swift */,
@@ -65,6 +80,20 @@
 				2D5CD3AC27B5F1DE00A8282C /* Info.plist */,
 			);
 			path = "TFM IA";
+			sourceTree = "<group>";
+		};
+		2D5CD3B227B5F39C00A8282C /* YOLO */ = {
+			isa = PBXGroup;
+			children = (
+				2D5CD3BF27B5F4A900A8282C /* TinyYOLO.mlmodel */,
+				2D5CD3B327B5F3B500A8282C /* BoundingBox.swift */,
+				2D5CD3B527B5F3D900A8282C /* CVPixelBuffer+Helpers.swift */,
+				2D5CD3B727B5F40000A8282C /* Helpers.swift */,
+				2D5CD3B927B5F42F00A8282C /* UIImage+CVPixelBuffer.swift */,
+				2D5CD3BB27B5F45200A8282C /* VideoCapture.swift */,
+				2D5CD3BD27B5F47600A8282C /* YOLO.swift */,
+			);
+			path = YOLO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +167,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D5CD3BC27B5F45200A8282C /* VideoCapture.swift in Sources */,
+				2D5CD3C027B5F4A900A8282C /* TinyYOLO.mlmodel in Sources */,
 				2D5CD3A327B5F1DB00A8282C /* ViewController.swift in Sources */,
+				2D5CD3BE27B5F47600A8282C /* YOLO.swift in Sources */,
+				2D5CD3B827B5F40000A8282C /* Helpers.swift in Sources */,
+				2D5CD3B627B5F3D900A8282C /* CVPixelBuffer+Helpers.swift in Sources */,
 				2D5CD39F27B5F1DB00A8282C /* AppDelegate.swift in Sources */,
+				2D5CD3BA27B5F42F00A8282C /* UIImage+CVPixelBuffer.swift in Sources */,
 				2D5CD3A127B5F1DB00A8282C /* SceneDelegate.swift in Sources */,
+				2D5CD3B427B5F3B500A8282C /* BoundingBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +328,7 @@
 				DEVELOPMENT_TEAM = 7RT4X7Y335;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "TFM IA/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TFM IA";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,6 +357,7 @@
 				DEVELOPMENT_TEAM = 7RT4X7Y335;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "TFM IA/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TFM IA";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
